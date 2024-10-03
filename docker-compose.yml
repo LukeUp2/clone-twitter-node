@@ -1,0 +1,12 @@
+name: twitter-clone-db
+
+services:
+  pg:
+    image: bitnami/postgresql:13.6.0
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=1234
+      - POSTGRES_DB=clone_twitter
+#trocar os valores por variaveis .env, sintax: ${nome no .env}
